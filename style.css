@@ -8,52 +8,93 @@
     src: url(assets/fonts/PTSans-Bold.ttf);
 }
 
-:root{
+:root {
     --primary-color: #fc0254;
     --primary-dark: #363636;
 }
 
-body{
+body {
     color: var(--primary-dark);
 }
 
-.navbar-nav{
+.navbar-nav {
     font-family: "PTSans Bold";
 }
 
-.tab-lines{
+.tab-lines {
     font-family: "PTSans Reg";
 }
 
-.nav-link{
+.nav-link {
     color: var(--primary-dark) !important;
     transition: all 0.2s;
 }
 
-.nav-link:hover{
+.nav-link:hover {
     color: var(--primary-color) !important;
     border-bottom: 2px solid var(--primary-color);
 }
 
-.active{
+.active {
     transition: all 0.2s;
     color: var(--primary-color) !important;
     border-bottom: 2px solid var(--primary-color);
 }
 
-.dropdown:hover .dropdown-menu{
+.dropdown:hover .dropdown-menu {
     display: block;
 }
 
-.dropdown{
+.dropdown {
     height: 100px;
 }
 
-.dropdown-menu:hover{
+.dropdown-menu:hover {
     display: block;
 }
 
-.dropdown-item:hover{
+.dropdown-item:hover {
     background-color: white;
     color: var(--primary-color) !important;
+}
+
+.card-img-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.card-img-wrapper img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.card-img-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #FC0254;
+  opacity: 0;
+  transition: all 0.2s;
+}
+
+.card:hover .card-img-wrapper::after {
+  opacity: 0.34;
+}
+
+.recipe-section{
+    padding-bottom: 120px;
+}
+
+.card-img-wrapper i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.card:hover .card-img-wrapper i{
+    display: block !important;
 }
