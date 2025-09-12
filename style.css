@@ -59,71 +59,98 @@ body {
 }
 
 .card-img-wrapper {
-  position: relative;
-  display: inline-block;
+    position: relative;
+    display: inline-block;
 }
 
 .card-img-wrapper img {
-  display: block;
-  width: 100%;
-  height: 100%;
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 
 .card-img-wrapper::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: var(--primary-color);
-  opacity: 0;
-  transition: all 0.2s;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-color);
+    opacity: 0;
+    transition: all 0.2s;
 }
 
 .card:hover .card-img-wrapper::after {
-  opacity: 0.34;
+    opacity: 0.34;
 }
 
-.recipe-section{
+.recipe-section {
     padding-bottom: 120px;
 }
 
-.card-img-wrapper i{
+.card-img-wrapper i {
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
     left: 50%;
 }
 
-.card:hover .card-img-wrapper i{
+.card:hover .card-img-wrapper i {
     display: block !important;
 }
 
-.recipe-body{
+.recipe-body {
     background-color: #F8F9FB;
     padding: 120px 0px;
 }
 
-.active-pill{
+.active-pill {
     background-color: var(--primary-color);
     color: white !important;
     font-weight: bold;
     border-radius: 0px !important;
 }
 
-.nav-pills{
+.nav-pills {
     font-family: "PTSans Bold";
 }
 
-.nav-pills .nav-link{
+.nav-pills .nav-link {
     color: var(--primary-dark);
 }
 
-.dishes-section{
+.dishes-section {
     padding: 120px 0px;
 }
 
-.featured-recipe-body{
+.featured-recipe-body {
     background-color: #F8F9FB;
+}
+
+.footer-section {
+    padding: 120px 0px;
+    background-color: #EAEDF2;
+}
+
+.footer-section ::placeholder {
+    font-style: italic !important;
+    color: var(--primary-dark);
+}
+
+.social-icons i {
+    color: #B8C1D0 !important;
+    transition: all 0.3s;
+}
+
+.social-icons .icon {
+    color: #8F8F8F;
+}
+
+.icon {
+    cursor: pointer;
+}
+
+.icon:hover i {
+    color: #0db1f6 !important;
 }
