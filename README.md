@@ -89,10 +89,6 @@ Contributions are welcome! For small changes, feel free to open a pull request.
 3. Commit your changes: `git commit -m "feat: add your feature"`
 4. Push and open a PR
 
-### License
-
-This project is open source under the MIT License. You are free to use, modify, and distribute.
-
 ### Credits
 
 - Repository and implementation by **@sheikh-mohammad**
